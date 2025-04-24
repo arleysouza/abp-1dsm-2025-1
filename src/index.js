@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 
 const degree = require("./routes/degree");
+const professor = require("./routes/professor");
 
 // Carrega as variáveis de ambiente do arquivo .env
 dotenv.config();
@@ -26,6 +27,7 @@ app.listen(PORT, function () {
 });
 
 app.use("/degree", degree);
+app.use("/professor", professor);
 
 app.use(function(req, res){
   res.status(404).json({message:"Recurso inexistente"})
