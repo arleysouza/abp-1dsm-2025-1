@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="password">Senha:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <script>
+      // Captura o formulário
+      const form = document.getElementById("loginForm");
+
+      // Evento de envio do formulário
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita o envio padrão do formulário
+
+        // Obtém os valores dos campos de entrada
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Prepara os dados para o envio no formato JSON
+        const data = {
+          mail: email,
+          password: password,
+        };
+
+        // Envia a requisição HTTP POST
+        fetch("/user/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error("Erro no login");
+            }
+          })
+          .then((data) => {
+            // Salva os dados do usuário em um cookie (JSON em string)
+            document.cookie = `user=${encodeURIComponent(
+              JSON.stringify(data)
+            )}; path=/; max-age=86400`; // 1 dia
+
+            // Redireciona para a página de horários
+            window.location.href = "/horarios";
+          })
+          .catch((error) => {
+            console.error("Erro:", error);
+          });
+      });
+    </script>
+  </body>
+</html>

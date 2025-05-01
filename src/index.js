@@ -2,9 +2,11 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const path = require("path");
 
 const degree = require("./routes/degree");
 const professor = require("./routes/professor");
+const user = require("./routes/user");
 
 // Carrega as variáveis de ambiente do arquivo .env
 dotenv.config();
@@ -28,6 +30,20 @@ app.listen(PORT, function () {
 
 app.use("/degree", degree);
 app.use("/professor", professor);
+app.use("/user", user);
+
+// Rotas para arquivos estáticos
+app.get("/login", function(req,res){
+  res.sendFile(path.join(__dirname,"..","public","login.html"));
+});
+
+app.get("/register", function(req,res){
+  res.sendFile(path.join(__dirname,"..","public","register.html"));
+});
+
+app.get("/horarios", function(req,res){
+  res.sendFile(path.join(__dirname,"..","public","horarios.html"));
+});
 
 app.use(function(req, res){
   res.status(404).json({message:"Recurso inexistente"})
