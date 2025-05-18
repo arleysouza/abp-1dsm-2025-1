@@ -1,11 +1,12 @@
 const { Router } = require("express");
-const { insert, select, remove, update } = require("../controllers/DegreeController");
+const { list } = require("../controllers/DegreeController");
 
 const routes = Router();
 
-routes.post("/", insert);
-routes.get("/", select);
-routes.delete("/:id", remove);
-routes.put("/:id", update);
+routes.get("/", list);
+
+routes.use(function (req, res) {
+  res.status(404).json({ message: "Recurso inexistente" });
+});
 
 module.exports = routes;

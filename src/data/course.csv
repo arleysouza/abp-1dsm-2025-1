@@ -1,0 +1,91 @@
+idcourse;idprofessor;iddegree;name;semester
+1;7;1;Algoritmos e Lógica de Programação;1
+2;14;1;Desenvolvimento Web I;1
+3;24;1;Design Digital;1
+4;5;1;Engenharia de Software I;1
+5;24;1;Modelagem de Banco de Dados;1
+6;5;1;Sistemas Operacionais e Redes de Computadores;1
+7;14;1;Técnicas de Programação I;2
+8;7;1;Desenvolvimento Web II;2
+9;11;1;Matemática para computação;2
+10;4;1;Engenharia de Software II;2
+11;21;1;Banco de Dados – Relacional;2
+12;11;1;Estrutura de Dados;2
+13;14;1;Técnicas de Programação II;3
+14;30;1;Desenvolvimento Web III;3
+15;35;1;Álgebra Linear;3
+16;36;1;Gestão Ágil de Projetos de Software;3
+17;21;1;Banco de Dados - Não Relacional;3
+18;2;1;Interação Humano Computador;3
+19;25;1;Inglês I;3
+20;21;1;Integração e Entrega Contínua;4
+21;30;1;Laboratório de Desenvolvimento Web;4
+22;19;1;Internet das Coisas e Aplicações;4
+23;4;1;Programação para Dispositivos Móveis I;4
+24;35;1;Estatística Aplicada;4
+25;21;1;Experiência do Usuário;4
+26;25;1;Inglês II;4
+27;36;1;Computação em Nuvem I;5
+28;19;1;Aprendizagem de Máquina;5
+29;3;1;Lab. de Des. para Dispositivos Móveis;5
+30;3;1;Programação para Dispositivos Móveis II;5
+31;10;1;Segurança no Des. de Aplicações;5
+32;33;1;Fundamentos da Redação técnica;5
+33;16;1;Inglês III;5
+41;9;2;Introdução à Ciência da Geoinformação;1
+42;8;2;Desenho Técnico;1
+43;20;2;Algoritmos e Lógica de Programação;1
+44;39;2;Metodologia da Pesquisa Científico-Tecnológica;1
+45;18;2;Fundamentos de Física;1
+46;29;2;Cálculo;1
+47;26;2;Fundamentos da Comunicação Empresarial;1
+48;26;2;Inglês I;1
+56;1;2;Topografia e Batimetria;3
+57;1;2;Geodésia;3
+58;9;2;Linguagem de Programação II;3
+59;40;2;Modelagem de Banco de Dados Espacial;3
+60;15;2;Processamento Digital de Imagens;3
+61;35;2;Estatística;3
+62;26;2;Inglês III;3
+71;31;2;Projetos em Geoprocessamento I;5
+72;15;2;Análise Ambiental por Geoprocessamento;5
+73;9;2;Geoprocessamento Aplicado à Infraestrutura Urbana;5
+74;14;2;Tecnologias WEB Aplicadas a Sistemas de Informação Geográfica;5
+75;28;2;Análise Espacial e Modelagem de Terrenos;5
+76;28;2;Fundamentos da Administração Geral;5
+77;28;2;Legislação e Normas para Geoprocessamento;5
+78;16;2;Inglês V;5
+79;18;2;Projetos em Geoprocessamento II;6
+80;40;2;Geomarketing;6
+81;1;2;Fotogrametria Analógica e Digital;6
+82;31;2;Integração e Análise de Dados Territoriais;6
+83;40;2;Cadastro Técnico Multifinalitário;6
+84;28;2;Posicionamento por Satélite;6
+85;41;2;Padrões de Distribuição de Informações em SIG;6
+86;1;2;Georreferenciamento de Imóveis Rurais;6
+87;16;2;Inglês VI;6
+88;6;3;Ciências Ambientais e das Águas;1
+89;39;3;Biologia;1
+90;42;3;Sociologia Ambiental;1
+91;37;3;Matemática Aplicada;1
+92;39;3;Metodologia da Pesquisa Científico-Tecnológica;1
+93;26;3;Fundamentos da Comunicação Empresarial;1
+94;17;3;Química Geral;1
+95;13;3;Geociência Ambiental;1
+96;26;3;Inglês I;1
+97;35;3;Hidrologia e Recursos Hídricos;2
+98;39;3;Ecologia;2
+99;1;3;Cartografia, Topografia e Batimetria;2
+100;15;3;Sensoriamento Remoto e Geoprocessamento;2
+101;35;3;Climatologia e Meteorologia;2
+102;38;3;Microbiologia Ambiental;2
+103;17;3;Físico Química Aplicada a Gestão Ambiental;2
+104;26;3;Inglês II;2
+105;32;3;Hidráulica Fluvial;3
+106;39;3;Limnologia;3
+107;29;3;Estatística;3
+108;13;3;Planejamento e Conservação Ambiental;3
+109;9;3;Interpretação e Processamento Digital de Imagens;3
+110;34;3;Gestão da Qualidade;3
+111;39;3;Saneamento Ambiental I;3
+112;16;3;Inglês III;3

@@ -4,9 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
 
-const degree = require("./routes/degree");
-const professor = require("./routes/professor");
-const user = require("./routes/user");
+const routes = require("./routes");
 
 // Carrega as variáveis de ambiente do arquivo .env
 dotenv.config();
@@ -28,23 +26,21 @@ app.listen(PORT, function () {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
 
-app.use("/degree", degree);
-app.use("/professor", professor);
-app.use("/user", user);
-
 // Rotas para arquivos estáticos
-app.get("/login", function(req,res){
-  res.sendFile(path.join(__dirname,"..","public","login.html"));
+app.get("/cursos", function(req,res){
+  res.sendFile(path.join(__dirname,"..","public/html","cursos.html"));
 });
 
-app.get("/register", function(req,res){
-  res.sendFile(path.join(__dirname,"..","public","register.html"));
-});
+/*
+Essa instrução garantirá que os arquivos da pasta public sejam acessíveis via navegador.
+Por exemplo: http://localhost:3001/js/cursos.js
+*/
+app.use(express.static(path.join(__dirname, "..", "public")));
 
-app.get("/horarios", function(req,res){
-  res.sendFile(path.join(__dirname,"..","public","horarios.html"));
-});
+// as rotas para arquivos estáticos precisam vir antes desta rota
+app.use("/", routes);
 
 app.use(function(req, res){
   res.status(404).json({message:"Recurso inexistente"})
 });
+
