@@ -118,7 +118,7 @@ Este projeto consiste em um servidor desenvolvido com Node.js para exibir os cur
 1. Crie um banco de dados no PostgreSQL;
 2. Edite o arquivo `src/controllers/db.js` com os parâmetros de conexão apropriados (usuário, senha, host e nome do banco);
 3. No pgAdmin (ou outro cliente PostgreSQL), execute os comandos do arquivo `src/data/comandos.sql` para criar as tabelas. Modelo de dados:
-![](https://github.com/arleysouza/https://github.com/arleysouza/abp-1dsm-2025-1/blob/main/images/modelo-bd.png)
+![](https://github.com/arleysouza/abp-1dsm-2025-1/blob/main/images/modelo-bd.png)
 4. No mesmo cliente, execute os comandos do arquivo `src/data/load.sql`, ajustando os caminhos para os arquivos `.csv` conforme necessário, para popular o banco com os dados.
 
 
